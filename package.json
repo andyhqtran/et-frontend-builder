@@ -1,0 +1,35 @@
+{
+  "name": "et-frontend-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyhqtran/et-frontend-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyhqtran/et-frontend-builder/issues"
+  },
+  "homepage": "https://github.com/andyhqtran/et-frontend-builder#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-uglify": "^1.5.3",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  }
+}
