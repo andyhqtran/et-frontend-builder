@@ -50,6 +50,7 @@ gulp.task('watch', function() {
   var watcher = watchify(browserify({
     entries: [path.js],
     transform: [reactify],
+    extensions: ['.jsx'],
     debug: true,
     cache: {}, packageCache: {}, fullPaths: true
   }));
@@ -69,8 +70,9 @@ gulp.task('watch', function() {
 
 gulp.task('js', function(){
     browserify({
-        entries: [path.js],
-        transform: [reactify],
+      entries: [path.js],
+      transform: [reactify],
+      extensions: ['.jsx'],
     })
     .bundle()
     .pipe(browserSync.stream());
