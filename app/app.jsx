@@ -3,6 +3,8 @@ var ReactDOM = require('react-dom');
 
 var ETBuilderHeader = require('./components/header/header')
 
+var ETBuilderButton = require('./components/button/button')
+
 var ETBuilderFormButton = require('./components/forms/form-button/form-button')
 var ETBuilderFormTextInput = require('./components/forms/form-text-input/form-text-input')
 
@@ -12,7 +14,7 @@ var App = React.createClass({
       <div id='page-container'>
       	<ETBuilderHeader />
         Initialized
-
+        <ETBuilderButton type="button" primary>Test</ETBuilderButton>
         <form>
           <ETBuilderFormTextInput placeholder="Full Name" requried="true" />
           <ETBuilderFormButton>Submit</ETBuilderFormButton>
