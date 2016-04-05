@@ -3,7 +3,7 @@ var classNames = require('classnames');
 
 var ETBuilderButton = React.createClass({
   propTypes: {
-    children: React.PropTypes.string.isRequired,
+    children: React.PropTypes.node,
     inverse: React.PropTypes.bool,
     primary: React.PropTypes.bool,
     success: React.PropTypes.bool,
