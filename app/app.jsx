@@ -7,6 +7,7 @@ var ETBuilderButton = require('./components/button/button')
 
 var ETBuilderFormButton = require('./components/forms/form-button/form-button')
 var ETBuilderFormTextInput = require('./components/forms/form-text-input/form-text-input')
+var ETBuilderFormTextarea = require('./components/forms/form-textarea/form-textarea')
 
 var App = React.createClass({
   render: function() {
@@ -16,8 +17,11 @@ var App = React.createClass({
         Initialized
         <ETBuilderButton type="button" primary>Test</ETBuilderButton>
         <form>
-          <ETBuilderFormTextInput placeholder="Full Name" requried="true" />
-          <ETBuilderFormButton>Submit</ETBuilderFormButton>
+          <ETBuilderFormTextInput type="text" placeholder="First Name" error requried />
+          <ETBuilderFormTextInput type="text" placeholder="Last Name" success requried />
+          <ETBuilderFormTextInput type="email" placeholder="Email Address" requried />
+          <ETBuilderFormTextarea placeholder="Description" requried />
+          <ETBuilderFormButton type="submit" primary>Submit</ETBuilderFormButton>
         </form>
       </div>
     );

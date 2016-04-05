@@ -1,4 +1,9 @@
-.et-fb-form-input {
+/* Form Text Input */
+.et-fb-form-input,
+.et-fb-form-input[type=email],
+.et-fb-form-input[type=password],
+.et-fb-form-input[type=tel],
+.et-fb-form-input[type=text] {
   outline: none;
   background: #F1F5F9;
   border: 0;
@@ -8,4 +13,35 @@
   font-size: 0.75rem;
   font-weight: 400;
   line-height: normal;
+  box-shadow: inset 0 0 0 2px transparent;
+}
+
+.et-fb-form-input {
+  // Error
+  &--error,
+  &--error[type=email],
+  &--error[type=password],
+  &--error[type=tel],
+  &--error[type=text] {
+    box-shadow: inset 0 0 0 1px #DC552B;
+    color: #DC552B;
+
+    &:focus {
+      color: #DC552B;
+    }
+  }
+
+  // Success
+  &--success,
+  &--success[type=email],
+  &--success[type=password],
+  &--success[type=tel],
+  &--success[type=text] {
+    box-shadow: inset 0 0 0 1px #29C4A9;
+    color: #29C4A9;
+
+    &:focus {
+      color: #29C4A9;
+    }
+  }
 }

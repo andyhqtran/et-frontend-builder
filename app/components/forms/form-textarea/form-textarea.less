@@ -1,0 +1,33 @@
+/* Form Textarea */
+.et-fb-form-textarea {
+  outline: none;
+  background: #F1F5F9;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 20px;
+  color: #4C5866;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: normal;
+  vertical-align: top;
+
+  // Error
+  &--error {
+    box-shadow: inset 0 0 0 1px #DC552B;
+    color: #DC552B;
+
+    &:focus {
+      color: #DC552B;
+    }
+  }
+
+  // Success
+  &--success {
+    box-shadow: inset 0 0 0 1px #29C4A9;
+    color: #29C4A9;
+
+    &:focus {
+      color: #29C4A9;
+    }
+  }
+}
