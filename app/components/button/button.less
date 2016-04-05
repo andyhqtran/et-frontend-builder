@@ -1,6 +1,8 @@
+/* Button */
 .et-fb-button {
   outline: none;
   background: #F1F5F9;
+  max-height: 40px;
   border: 0;
   border-radius: 3px;
   padding: 12px 20px;
@@ -9,19 +11,35 @@
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  transition: background 0.3s ease;
 
+  // Primary
   &--primary {
     background: #2B87DA;
     color: #FFFFFF;
+
+    &:hover {
+      background: #007CC3;
+    }
   }
 
+  // Success
   &--success {
     background: #29C4A9;
     color: #FFFFFF;
+
+    &:hover {
+      background: #00BBA3;
+    }
   }
 
+  // Inverse
   &--inverse {
     background: #3E5062;
     color: #FFFFFF;
+
+    &:hover {
+      background: #4D565F;
+    }
   }
 }

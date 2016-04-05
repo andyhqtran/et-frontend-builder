@@ -1,0 +1,61 @@
+/* Form Toggle */
+.et-fb-form-toggle {
+  position: relative;
+  display: inline-block;
+  background: #F1F5F9;
+  border-radius: 2px;
+  width: 70px;
+  padding: 5px;
+  box-sizing: border-box;
+  vertical-align: top;
+  color: #29C4A9;
+  transition: background-color 0.3s ease,
+              color 0.3s ease;
+
+  // Handle
+  &__handle {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    width: 30px;
+    height: 20px;
+    margin: 0 50% 0 0;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px 0px fade(#000000, 10%);
+    transition: margin 0.3s ease;
+    cursor: pointer;
+  }
+
+  // Label
+  &__label {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    transform: translateY(-50%);
+    color: inherit;
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+
+    // On
+    &--on {
+      left: 2.5px;
+    }
+
+    // Off
+    &--off {
+      right: 2.5px;
+    }
+  }
+
+  // On State
+  &--on {
+    background: #2B87DA;
+    color: #FFFFFF;
+
+    .et-fb-form-toggle__handle {
+      margin: 0 0 0 50%;
+    }
+  }
+}

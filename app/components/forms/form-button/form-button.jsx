@@ -21,7 +21,7 @@ var ETBuilderFormButton = React.createClass({
       <button type={this.props.type} className={classes}>
         {this.props.children}
       </button>
-    )
+    );
   }
 });
 
