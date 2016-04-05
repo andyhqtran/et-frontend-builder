@@ -1,17 +1,25 @@
 /* Button */
 .et-fb-button {
   outline: none;
+  display: inline-block;
   background: #F1F5F9;
   max-height: 40px;
   border: 0;
   border-radius: 3px;
   padding: 12px 20px;
+  box-sizing: border-box;
   color: #4C5866;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
   transition: background 0.3s ease;
+
+  // Block
+  &--block {
+    display: block;
+    width: 100%;
+  }
 
   // Primary
   &--primary {

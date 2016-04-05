@@ -3,6 +3,7 @@ var classNames = require('classnames');
 
 var ETBuilderButton = React.createClass({
   propTypes: {
+    block: React.PropTypes.bool,
     children: React.PropTypes.node,
     inverse: React.PropTypes.bool,
     primary: React.PropTypes.bool,
@@ -12,6 +13,7 @@ var ETBuilderButton = React.createClass({
   render: function() {
     var classes = classNames({
       'et-fb-button': true,
+      'et-fb-button--block': this.props.block,
       'et-fb-button--inverse': this.props.inverse,
       'et-fb-button--primary': this.props.primary,
       'et-fb-button--success': this.props.success
