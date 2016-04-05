@@ -2,6 +2,9 @@ var React = require('react');
 var classNames = require('classnames');
 
 var ETBuilderFormToggle = React.createClass({
+  propTypes: {
+    value: React.PropTypes.string
+  },
   getInitialState: function() {
     return {
       value: this.props.value
