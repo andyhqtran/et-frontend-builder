@@ -16,6 +16,7 @@ var ETBuilderFormButton = React.createClass({
       'et-fb-form-button--block': this.props.block,
       'et-fb-form-button--inverse': this.props.inverse,
       'et-fb-form-button--primary': this.props.primary,
+      'et-fb-button--round': this.props.round,
       'et-fb-form-button--success': this.props.success
     });
 

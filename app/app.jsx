@@ -25,6 +25,24 @@ var App = React.createClass({
         </div>
 
         <div style={demoStyles}>
+          <ETBuilderButton type="button" round>
+            <ETBuilderIcon size="14" icon="text-italic" color="#4C5866" />
+          </ETBuilderButton>
+          <ETBuilderButton type="button" round>
+            <ETBuilderIcon size="14" icon="text-italic" color="#4C5866" />
+          </ETBuilderButton>
+          <ETBuilderButton type="button" large round>
+            <ETBuilderIcon size="14" icon="text-underline" color="#4C5866" />
+          </ETBuilderButton>
+          <ETBuilderButton type="button" round>
+            <ETBuilderIcon size="14" icon="text-italic" color="#4C5866" />
+          </ETBuilderButton>
+          <ETBuilderButton type="button" round>
+            <ETBuilderIcon size="14" icon="text-italic" color="#4C5866" />
+          </ETBuilderButton>
+        </div>
+
+        <div style={demoStyles}>
           <ETBuilderButton type="button">
             <ETBuilderIcon size="14" icon="text-italic" color="#4C5866" />
           </ETBuilderButton>
