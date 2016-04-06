@@ -1,14 +1,15 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var ETBuilderHeader = require('./components/header/header')
+var ETBuilderHeader = require('./components/header/header');
 
-var ETBuilderButton = require('./components/button/button')
+var ETBuilderButton = require('./components/button/button');
+var ETBuilderIcon = require('./components/icon/icon');
 
-var ETBuilderFormButton = require('./components/forms/form-button/form-button')
-var ETBuilderFormTextInput = require('./components/forms/form-text-input/form-text-input')
-var ETBuilderFormTextarea = require('./components/forms/form-textarea/form-textarea')
-var ETBuilderFormToggle = require('./components/forms/form-toggle/form-toggle')
+var ETBuilderFormButton = require('./components/forms/form-button/form-button');
+var ETBuilderFormTextInput = require('./components/forms/form-text-input/form-text-input');
+var ETBuilderFormTextarea = require('./components/forms/form-textarea/form-textarea');
+var ETBuilderFormToggle = require('./components/forms/form-toggle/form-toggle');
 
 var App = React.createClass({
   render: function() {
@@ -24,7 +25,19 @@ var App = React.createClass({
         </div>
 
         <div style={demoStyles}>
-          <ETBuilderButton type="button" primary>Default</ETBuilderButton>
+          <ETBuilderButton type="button">
+            <ETBuilderIcon size="14" icon="text-italic" color="#4C5866" />
+          </ETBuilderButton>
+          <ETBuilderButton type="button">
+            <ETBuilderIcon size="14" icon="text-bold" color="#4C5866" />
+          </ETBuilderButton>
+          <ETBuilderButton type="button">
+            <ETBuilderIcon size="14" icon="text-underline" color="#4C5866" />
+          </ETBuilderButton>
+        </div>
+
+        <div style={demoStyles}>
+          <ETBuilderButton type="button">Default</ETBuilderButton>
           <ETBuilderButton type="button" primary>Primary</ETBuilderButton>
           <ETBuilderButton type="button" success>Success</ETBuilderButton>
           <ETBuilderButton type="button" inverse>Inverse</ETBuilderButton>
